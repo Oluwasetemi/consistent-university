@@ -1,12 +1,5 @@
 import React from 'react'
-import Link from 'next/link'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
 import Carousel from 'nuka-carousel'
-
-
-library.add(faStroopwafel)
 
 import Header from '../components/Header'
 import News from '../components/News'
@@ -26,17 +19,19 @@ class App extends React.Component {
   };
   render() {
     const imgStyle = {
-      height: '69vh',
-
+      height: '485px',
     }
     return (
       <div className="wrapper">
       <Carousel dragging={true} transitionMode="fade" slideIndex={this.state.slideIndex}
       afterSlide={slideIndex => this.setState({ slideIndex })}>
-        <img src="static/i1.png" style={imgStyle} />
-        <img src="static/i2.png" style={imgStyle}/>
-        <img src="static/i1.png" style={imgStyle}/>
-        <img src="static/i2.png" style={imgStyle}/>
+        <img src="static/i1.jpeg" style={imgStyle} />
+        <img src="static/i2.jpeg" style={imgStyle} />
+        <img src="static/i3.jpeg" style={imgStyle} />
+        <img src="static/i4.jpeg" style={imgStyle} />
+        <img src="static/i5.jpeg" style={imgStyle} />
+        <img src="static/i6.jpeg" style={imgStyle} />
+
     </Carousel>
       </div>
     )
@@ -80,12 +75,16 @@ class Index extends React.Component {
 
         .news {
           grid-area:  n;
+          width: 380px;
+          height: max-content;
           // z-index: 10;
         }
         .carousel {
           grid-area:  c;
-          width: 62vw;
           padding: 0;
+          margin: 0;
+          width: 930px;
+          height: 70vh;
         }
         .quick-link {
           grid-area:  q;
@@ -101,6 +100,28 @@ class Index extends React.Component {
         }
         .footer {
           grid-area: f;
+        }
+
+        @media all and (max-width: 1200px) {
+          .carousel {
+            width: 750px;
+          }
+
+        }
+
+        @media all and (max-width: 960px) {
+          .container {
+            display: block;
+          }
+          .carousel {
+            margin-bottom: 60px;
+          }
+          .container> * {
+            width: 100%;
+          }
+          .nav-menu {
+            font-size:10px;
+          }
         }
       `}
     </style>

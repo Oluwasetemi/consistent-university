@@ -7,7 +7,6 @@ export default () => (
         .publication {
           margin-top: 5px;
           height: 40vh;
-          width: 99%;
           border: 1px solid #35185190;
           border-radius: 5px;
           margin-bottom: 10px;

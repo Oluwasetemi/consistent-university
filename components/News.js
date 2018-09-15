@@ -42,10 +42,9 @@ export default () => (
     <style jsx>
       {`
       .news {
-        width: 33vw;
         border-radius: 5px;
         border: 4px solid #35185190;
-      }
+        margin-bottom: 10px;      }
       .new-item {
 
       }
@@ -55,6 +54,10 @@ export default () => (
       ul {
         list-style-type: none;
         height: auto;
+        margin:0;
+      }
+      li {
+        margin:0;
       }
 
       `}

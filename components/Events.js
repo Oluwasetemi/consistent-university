@@ -7,9 +7,8 @@ export default () => (
         .events {
           margin-top: 5px;
           height: 40vh;
-          width: 97%;
           border: 1px solid #35185190;
-          border-radius: 5px;
+          // border-radius: 5px;
         }
       `}
     </style>

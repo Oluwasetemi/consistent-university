@@ -72,7 +72,7 @@ export default () => (
     .header {
       display: grid;
       grid-template-columns: auto 1fr 300px;
-      align-item: center;
+      // align-item: center;
       margin-bottom: 5px;
     }
     .additional-menu a {
@@ -95,6 +95,7 @@ export default () => (
     img:hover {
       cursor: pointer;
     }
+   
 
     `}</style>
   </nav>
