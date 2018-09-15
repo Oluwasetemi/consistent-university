@@ -23,7 +23,7 @@ const news = [
 const getNews = (news) => {
   return (
     news.map(news => (
-      <li key={news.id} id="item">
+      <li key={news.id}>
         <div className="new-item">
           <div className="header">{news.topic}</div>
           <div className="message">{news.message}</div>
@@ -42,20 +42,21 @@ export default () => (
     <style jsx>
       {`
       .news {
-        display: flex;
-        flex-direction: column;
+        width: 33vw;
         border-radius: 5px;
         border: 4px solid #35185190;
+      }
+      .new-item {
+
       }
       h1 {
         margin-left: 40px;
       }
       ul {
         list-style-type: none;
+        height: auto;
       }
-      li#item {
-        margin: 10px;
-      }
+
       `}
     </style>
   </div>

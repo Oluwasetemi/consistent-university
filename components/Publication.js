@@ -1,15 +1,16 @@
 export default () => (
-  <div className="notification">
-    <h1>Notifications</h1>
+  <div className="publication">
+    <h1>Publication</h1>
     <p>Hello World!</p>
     <style jsx>
       {`
-        .notification {
+        .publication {
           margin-top: 5px;
           height: 40vh;
-          width: 96%;
+          width: 99%;
           border: 1px solid #35185190;
           border-radius: 5px;
+          margin-bottom: 10px;
         }
       `}
     </style>

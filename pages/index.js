@@ -13,27 +13,40 @@ import News from '../components/News'
 import QuickLink from '../components/QuickLinks'
 import Notifications from '../components/Notifications'
 import Events from '../components/Events'
+import Publication from '../components/Publication'
 import Footer from '../components/Footer'
+
+const fixedHeight = {
+  height: '500px'
+}
 
 class App extends React.Component {
   state = {
     slideIndex: 0
   };
   render() {
+    const imgStyle = {
+      height: '69vh',
+
+    }
     return (
-      <Carousel dragging={true} autoplay={true} transitionMode="fade" slideIndex={this.state.slideIndex}
+      <div className="wrapper">
+      <Carousel dragging={true} transitionMode="fade" slideIndex={this.state.slideIndex}
       afterSlide={slideIndex => this.setState({ slideIndex })}>
-        <img src="static/i1.png"/>
-        <img src="static/i2.png"/>
-        <img src="static/i1.png"/>
-        <img src="static/i2.png"/>
+        <img src="static/i1.png" style={imgStyle} />
+        <img src="static/i2.png" style={imgStyle}/>
+        <img src="static/i1.png" style={imgStyle}/>
+        <img src="static/i2.png" style={imgStyle}/>
     </Carousel>
+      </div>
     )
   }
 }
 
-export default () => (
-  <div className="container">
+class Index extends React.Component {
+  render() {
+    return (
+      <div className="container">
     <div className="header">
       <Header />
     </div>
@@ -46,6 +59,9 @@ export default () => (
     <div className="quick-link"><QuickLink /></div>
     <div className="notification"><Notifications /></div>
     <div className="event"> <Events /></div>
+    <div className="publication">
+      <Publication />
+    </div>
     <div className="footer">
       <Footer />
     </div>
@@ -54,7 +70,7 @@ export default () => (
 
         .container {
           display: grid;
-          grid-template-areas: "h h h h" "c c c n" "q no no e" "f f f f";
+          grid-template-areas: "h h h h" "c c c n" "q no no e" "p p p p" "f f f f";
         }
 
         .header {
@@ -64,11 +80,12 @@ export default () => (
 
         .news {
           grid-area:  n;
-          z-index: 10;
+          // z-index: 10;
         }
         .carousel {
           grid-area:  c;
-          max-width: 60vw;
+          width: 62vw;
+          padding: 0;
         }
         .quick-link {
           grid-area:  q;
@@ -77,12 +94,19 @@ export default () => (
           grid-area:  no;
         }
         .event {
-          grid-area: e
+          grid-area: e;
+        }
+        .publication {
+          grid-area: p;
         }
         .footer {
-          grid-area: f
+          grid-area: f;
         }
       `}
     </style>
   </div>
-)
+    )
+  }
+}
+
+export default Index

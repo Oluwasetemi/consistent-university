@@ -12,7 +12,7 @@ export default () => (
       </Link>
       <b></b>
       <div className="additional-menu">
-        <Link href="/my-account">
+        <Link href="/portal">
           <a style={linkStyle}>My Account</a>
         </Link>
         <Link href="/webmail">
@@ -27,7 +27,7 @@ export default () => (
       <Link href="/about">
         <a style={linkStyle}>About</a>
       </Link>
-      <Link href="/admissions">
+      <Link href="/admission">
         <a style={linkStyle}>Admissions</a>
       </Link>
       <Link href="/colleges">
@@ -45,7 +45,7 @@ export default () => (
       <Link href="/research">
         <a style={linkStyle}>Research</a>
       </Link>
-      <Link href="/academics-calender">
+      <Link href="/calender">
         <a style={linkStyle}>Academics Calender</a>
       </Link>
     </div>

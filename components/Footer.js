@@ -19,6 +19,7 @@ export default () => (
         div {
           display: grid;
           grid-template-columns: 100px 1fr 400px 1fr;
+          height: 10vh;
         }
       `}
     </style>
