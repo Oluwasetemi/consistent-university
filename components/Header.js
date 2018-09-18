@@ -51,12 +51,14 @@ export default () => (
     </div>
     <style jsx>{`
     .nav-menu {
+      max-width: 100%;
       margin-bottom: 20px;
       padding: 10px;
       background-color: #351851;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      border-bottom: 15px solid #7B754F90;
+      border-bottom: 15px solid rgb(36, 255, 20);
     }
     .nav-menu a {
       text-decoration: none;
@@ -66,7 +68,7 @@ export default () => (
 
     .nav-menu a:hover {
       color: #351851;
-      background-color: white;
+      background-color: rgb(36, 255, 20);
       transform: scale(1.2);
     }
 
@@ -92,11 +94,21 @@ export default () => (
     b {
       height: 120px;
       background-color: #351851;
+      border: none;
+      margin: 0;
+      padding: 0;
     }
     img:hover {
       cursor: pointer;
     }
-
+    @media all and (max-width: 600px) {
+      .header {
+        grid-template-rows: auto auto;
+      }
+      b {
+        display: none;
+      }
+    }
 
     `}</style>
   </nav>
