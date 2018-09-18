@@ -1,12 +1,16 @@
 export default () => (
   <div className="quick-link">
     <h1>Quick Links</h1>
+    <hr />
     <div className="container">
       <p>Laboratories</p>
       <p>WorkShop</p>
       <p>Sport</p>
       <p>Bakery</p>
       <p>Acommodation</p>
+      <p>Laboratories</p>
+      <p>WorkShop</p>
+      <p>Sport</p>
     </div>
     <style jsx>
       {`
@@ -18,15 +22,21 @@ export default () => (
           padding: 5px;
         }
         .container {
+          margin: 0;
+          padding: 0;
           display: grid;
           grid-template-columns: repeat(2, 1fr);
-          grid-gap: 10px;
+        }
+        h1 {
+          margin: 0;
+          padding: 4px;
         }
         p {
           display: inline-block;
+          background: red;
         }
         p:nth-child(2n) {
-
+          background: #ffc600;
         }
       `}
     </style>

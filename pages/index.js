@@ -25,12 +25,14 @@ class App extends React.Component {
       <div className="wrapper">
       <Carousel dragging={true} transitionMode="fade" slideIndex={this.state.slideIndex}
       afterSlide={slideIndex => this.setState({ slideIndex })}>
-        <img src="static/i1.jpeg" style={imgStyle} />
-        <img src="static/i2.jpeg" style={imgStyle} />
-        <img src="static/i3.jpeg" style={imgStyle} />
-        <img src="static/i4.jpeg" style={imgStyle} />
-        <img src="static/i5.jpeg" style={imgStyle} />
-        <img src="static/i6.jpeg" style={imgStyle} />
+        <img src="static/Edu1.png" style={imgStyle} />
+        <img src="static/Edu2.png" style={imgStyle} />
+        <img src="static/Edu3.png" style={imgStyle} />
+        <img src="static/Edu4.png" style={imgStyle} />
+        <img src="static/Edu5.png" style={imgStyle} />
+        <img src="static/Edu6.png" style={imgStyle} />
+        <img src="static/Edu7.png" style={imgStyle} />
+        <img src="static/Edu8.png" style={imgStyle} />
 
     </Carousel>
       </div>
