@@ -64,7 +64,7 @@ export default () => (
       display: block;
       content: "";
       position: relative;
-      top: 30px;
+      top: 15px;
       // margin: 0px;
       margin-left:-10px;
       margin-right:-10px;

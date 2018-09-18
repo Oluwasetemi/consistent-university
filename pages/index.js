@@ -76,7 +76,7 @@ class Index extends React.Component {
 
         .news {
           grid-area:  n;
-          width: 380px;
+          width: 400px;
           height: max-content;
           // z-index: 10;
         }
@@ -84,7 +84,7 @@ class Index extends React.Component {
           grid-area:  c;
           padding: 0;
           margin: 0;
-          width: 930px;
+          width: 950px;
           height: 70vh;
         }
         .quick-link {

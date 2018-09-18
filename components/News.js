@@ -35,32 +35,41 @@ const getNews = (news) => {
 
 export default () => (
   <div className="news">
-  <h1>News</h1>
-    <ul>
-    {getNews(news)}
-    </ul>
-    <style jsx>
-      {`
-      .news {
-        border-radius: 5px;
-        border: 4px solid #35185190;
-        margin-bottom: 10px;      }
-      .new-item {
+  <h1>Welcome Address</h1>
+  <hr />
+  <img src="static/LAUTECH-VC.jpg" alt="VC"/>
+  <p>The VC, Professor Nike Collins welcomes everyone to the great citadel of learning, he wishes everyone a wonderful stay during their prospective time in institution. He reinstates that his administration is very focus to make life better for everyone including the staffs.</p>
+  <button>READ MORE📖</button>
+  <style jsx>
+    {`
+    .news {
+      border-radius: 0;
+      border: 1px solid #35185190;
+      margin-top: 2px;
+      margin-bottom: 10px;
+      padding: 5px;
+      background: linear-gradient(transparent, #351851);
+    }
+    h1 {
+      margin: 0;
+      padding: 4px;
+    }
+    img {
+      height:200px;
+      width: 100%;
 
-      }
-      h1 {
-        margin-left: 40px;
-      }
-      ul {
-        list-style-type: none;
-        height: auto;
-        margin:0;
-      }
-      li {
-        margin:0;
-      }
+    }
+    p {
+      font-weight: 200;
+      line-height:1.5;
+      color: white
+    }
+    button {
+      padding:4px;
+    }
 
-      `}
-    </style>
+
+    `}
+  </style>
   </div>
 )
