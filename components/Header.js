@@ -56,6 +56,7 @@ export default () => (
       background-color: #351851;
       display: flex;
       justify-content: center;
+      border-bottom: 15px solid #7B754F90;
     }
     .nav-menu a {
       text-decoration: none;
@@ -95,7 +96,7 @@ export default () => (
     img:hover {
       cursor: pointer;
     }
-   
+
 
     `}</style>
   </nav>
