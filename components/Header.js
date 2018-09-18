@@ -58,13 +58,20 @@ export default () => (
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      border-bottom: 15px solid rgb(36, 255, 20);
+      // border-bottom: 15px solid rgb(36, 255, 20);
     }
     .nav-menu:after {
       display: block;
       content: "";
-      height: 15px;
+      position: relative;
+      top: 30px;
+      // margin: 0px;
+      margin-left:-10px;
+      margin-right:-10px;
+      height: 20px;
+      width: 100vw;
       background: linear-gradient(90deg, #48ded4 0%, #a026bf 20%, #e82c75 60%, #FFC40E 85%, #48ded4 95%);
+      box-sizing: border-box;
     }
     .nav-menu a {
       text-decoration: none;
@@ -75,7 +82,7 @@ export default () => (
 
     .nav-menu a:hover {
       color: #351851;
-      background-color: rgb(36, 255, 20);
+      background-color: #fff;
       transform: scale(1.2);
     }
 

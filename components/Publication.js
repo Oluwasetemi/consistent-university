@@ -9,7 +9,7 @@ export default () => (
           height: 40vh;
           border: 1px solid #35185190;
           border-radius: 5px;
-          margin-bottom: 10px;
+          margin-bottom: 20px;
         }
       `}
     </style>

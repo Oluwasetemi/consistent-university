@@ -10,15 +10,19 @@ export default () => (
         div {
           font-weight: 200;
           padding: 20px;
-          border-top: 15px solid rgb(36, 255, 20);
+          // border-top: 15px solid rgb(36, 255, 20);
           background: #351851;
           color: white;
         }
         div:before {
           display: block;
           content: "";
-          height: 15px;;
+          height: 20px;
+          margin: -15px -20px;
+          position: relative;
+          top: -20px;
           background: linear-gradient(90deg, #48ded4 0%, #a026bf 20%, #e82c75 60%, #FFC40E 85%, #48ded4 95%);
+
         }
       `}
     </style>
