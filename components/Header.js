@@ -60,6 +60,12 @@ export default () => (
       justify-content: center;
       border-bottom: 15px solid rgb(36, 255, 20);
     }
+    .nav-menu:after {
+      display: block;
+      content: "";
+      height: 15px;
+      background: linear-gradient(90deg, #48ded4 0%, #a026bf 20%, #e82c75 60%, #FFC40E 85%, #48ded4 95%);
+    }
     .nav-menu a {
       text-decoration: none;
       padding: 20px;
