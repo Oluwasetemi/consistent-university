@@ -92,6 +92,9 @@ export default () => (
       grid-template-columns: repeat(3, 100px);
       align-content: center;
     }
+    .additional-menu a:hover {
+      color: rgb(36, 255, 20);
+    }
     b {
       height: 120px;
       background-color: #351851;
