@@ -64,6 +64,7 @@ export default () => (
       text-decoration: none;
       padding: 20px;
       color: white;
+      font-weight: 200;
     }
 
     .nav-menu a:hover {

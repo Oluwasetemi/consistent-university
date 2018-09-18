@@ -64,6 +64,7 @@ class Index extends React.Component {
       {`
 
         .container {
+          font-weight: 200;
           display: grid;
           grid-template-areas: "h h h h" "c c c n" "q no no e" "p p p p" "f f f f";
         }

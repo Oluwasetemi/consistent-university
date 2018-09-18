@@ -17,13 +17,15 @@ export default () => (
     <Footer />
     <style jsx >
       {`h1 {
-        font-size:2.2em;
+        font-size:2.5em;
         padding: 20px;
         display: grid;
         grid-template-columns: 1fr auto 1fr;;
         grid-gap: 30px;
         align-items: center;
+        margin-top: -10px;
         margin-bottom: -10px;
+        font-weight: 400;
       }
 
       h1:before, h1:after {
@@ -46,7 +48,7 @@ export default () => (
       }
 
       p:nth-child(2n) {
-        --yellow: #ffc600;
+        background: #ffc600;
         --direction: right;
       }
 

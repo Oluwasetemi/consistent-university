@@ -8,6 +8,7 @@ export default () => (
     <style jsx>
       {`
         div {
+          font-weight: 200;
           padding: 20px;
           border-top: 15px solid rgb(36, 255, 20);
           background: #351851;
